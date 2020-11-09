@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -8,9 +9,160 @@ html {
   font-size: 10px;
 }
 
+body {
+  background-color: #ffffff;
+  color: #2B292D;
+}
+
 img {
   width: 100%;
   max-width: 100%;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/*HOME PAGE*/
+/*Header */
+.nav-header {
+  font-family: "Work Sans", sans-serif;
+  height: 9rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-text h4 {
+  font-size: 2rem;
+}
+.nav-logo-text span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #aaa6ae;
+}
+
+.nav-header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header-items {
+  display: flex;
+}
+
+.nav-header-item {
+  padding: 0 1.5rem;
+  transition: all 0.5s;
+  position: relative;
+}
+.nav-header-item.active .nav-header-link {
+  font-weight: bold;
+}
+.nav-header-item:hover .dropdown-library {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-header-link {
+  font-size: 1.8rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.nav-header-link img {
+  margin-left: 1rem;
+  font-family: initial;
+  max-height: 0.8rem;
+  width: initial;
+}
+
+.dropdown-library {
+  position: absolute;
+  top: calc(100% + 2rem);
+  right: 0;
+  width: 60rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(50% - 2.5rem), 1fr));
+  grid-gap: 2.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-arrow-up {
+  position: absolute;
+  top: -3rem;
+  right: 5%;
+  width: 6rem;
+  height: 3rem;
+  overflow: hidden;
+}
+.dropdown-arrow-up:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: inherit;
+  background-color: #ffffff;
+  top: 100%;
+  webkit-box-shadow: 1px 0px 8px 0px #2b292d;
+  -moz-box-shadow: 1px 0px 8px 0px #2b292d;
+  box-shadow: 1px 0px 4px 0px #2b292d;
+  transform: rotate(45deg);
+}
+
+.library-item {
+  cursor: pointer;
+}
+.library-item:hover .library-title {
+  color: #009B4D;
+}
+
+.library-title {
+  transition: color 0.3s;
+  font-size: 2.2rem;
+}
+
+.library-description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.btn-get-started {
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1.3rem 2rem;
+  background-color: #3040C4;
+  color: #ffffff;
+}
+
+/*End Header */
+/*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

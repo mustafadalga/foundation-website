@@ -32,14 +32,37 @@ a {
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 section {
   padding: 5rem 0;
 }
 
+.btn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1.3rem 2rem;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  -webkit-box-shadow: 1px 1px 8px 0px #2b292d;
+  -moz-box-shadow: 1px 1px 8px 0px #2b292d;
+  box-shadow: 1px 1px 8px 0px #2b292d;
+}
+
 /*HOME PAGE*/
 /*Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .btn-get-started {
+  margin-left: 1.5rem;
+}
+
 .nav-header {
   font-family: "Work Sans", sans-serif;
   height: 9rem;
@@ -112,6 +135,7 @@ section {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .dropdown-arrow-up {
@@ -154,15 +178,53 @@ section {
 }
 
 .btn-get-started {
-  margin-left: 1.5rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 1.3rem 2rem;
   background-color: #3040C4;
   color: #ffffff;
 }
 
 /*End Header */
+/*Hero */
+.hero {
+  background-color: #F3C6BD;
+  min-height: 100vh;
+  padding-top: 15rem;
+}
+
+.section-content {
+  display: flex;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+  position: relative;
+}
+
+.hero-title {
+  width: 150%;
+  font-size: 8rem;
+}
+
+.hero-desc {
+  margin: 3rem 0 6rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.btn-learn-more {
+  background-color: #ffffff;
+  color: #3040C4;
+}
+
+.hero-img {
+  flex-basis: 65%;
+  display: flex;
+  align-items: center;
+  background-color: #efb9af;
+}
+
+/*End Hero */
 /*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

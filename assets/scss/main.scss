@@ -8,6 +8,8 @@ $governor-bay-2:#3142C6;
 $mandys-pink:#F3C6BD;
 $mandys-pink2:#efb9af;
 $athens-gray:#F4F5F7;
+$old-lace:#FCF0E3;
+$flamingo:#F1592B;
 @mixin bs-md{
   -webkit-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
   -moz-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
@@ -219,6 +221,10 @@ z-index: 1;
   font-size: 2.4rem;
   font-weight: 400;
 }
+.hero-btn{
+  display: flex;
+  grid-gap: 2rem;
+}
 .btn-learn-more{
   background-color: $white;
   color: $governor-bay;
@@ -308,6 +314,8 @@ z-index: 1;
   cursor: pointer;
 
   &.active{
+    border-color: $governor-bay-2;
+    border-width: 3px;
     .feature-head{
       h3{
         color: $governor-bay-2;
@@ -345,5 +353,74 @@ z-index: 1;
   margin-left: 5%;
 }
 /*End Features*/
+
+/*Team Inbox*/
+.team-inbox{
+  background-color: $old-lace;
+  .section-content{
+    align-items: center;
+  }
+}
+.team-img{
+  flex-basis: 50%;
+  padding-right: 2.5rem;
+  & > *{
+    max-width: 40rem;
+  }
+  p{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}
+.team-text{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  & > *{
+    max-width: 50rem;
+  }
+}
+.team-head-title{
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: $flamingo;
+}
+.team-title{
+  font-size: 5.6rem;
+  margin:2.5rem 0;
+}
+.team-desc{
+  font-size: 2.4rem;
+}
+.team-card{
+  margin-top: 5rem;
+  background-color: $white;
+  padding: 2rem;
+}
+.team-card-head{
+  font-size: 2rem;
+}
+.team-card-body{
+  display: flex;
+  align-items: center;
+  img{
+    max-width: 4rem;
+  }
+}
+.team-card-text{
+  margin-left: 1rem;
+  margin-top: 5rem;
+  h5{
+    font-size: 1.6rem;
+  }
+  span{
+    font-size: 1.6rem;
+    color: $spun-pearl;
+    font-weight: 400;
+  }
+}
+/*End Team Inbox*/
 
 /*END HOME PAGE*/

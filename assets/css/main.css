@@ -220,6 +220,11 @@ header .btn-get-started {
   font-weight: 400;
 }
 
+.hero-btn {
+  display: flex;
+  grid-gap: 2rem;
+}
+
 .btn-learn-more {
   background-color: #ffffff;
   color: #3040C4;
@@ -312,6 +317,10 @@ header .btn-get-started {
   padding-bottom: 2.5rem;
   cursor: pointer;
 }
+.feature-item.active {
+  border-color: #3142C6;
+  border-width: 3px;
+}
 .feature-item.active .feature-head h3 {
   color: #3142C6;
 }
@@ -348,6 +357,84 @@ header .btn-get-started {
 }
 
 /*End Features*/
+/*Team Inbox*/
+.team-inbox {
+  background-color: #FCF0E3;
+}
+.team-inbox .section-content {
+  align-items: center;
+}
+
+.team-img {
+  flex-basis: 50%;
+  padding-right: 2.5rem;
+}
+.team-img > * {
+  max-width: 40rem;
+}
+.team-img p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.team-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+.team-text > * {
+  max-width: 50rem;
+}
+
+.team-head-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #F1592B;
+}
+
+.team-title {
+  font-size: 5.6rem;
+  margin: 2.5rem 0;
+}
+
+.team-desc {
+  font-size: 2.4rem;
+}
+
+.team-card {
+  margin-top: 5rem;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+.team-card-head {
+  font-size: 2rem;
+}
+
+.team-card-body {
+  display: flex;
+  align-items: center;
+}
+.team-card-body img {
+  max-width: 4rem;
+}
+
+.team-card-text {
+  margin-left: 1rem;
+  margin-top: 5rem;
+}
+.team-card-text h5 {
+  font-size: 1.6rem;
+}
+.team-card-text span {
+  font-size: 1.6rem;
+  color: #aaa6ae;
+  font-weight: 400;
+}
+
+/*End Team Inbox*/
 /*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

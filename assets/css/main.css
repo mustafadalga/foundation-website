@@ -58,6 +58,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: transparent;
 }
 header .btn-get-started {
   margin-left: 1.5rem;
@@ -66,7 +67,6 @@ header .btn-get-started {
 .nav-header {
   font-family: "Work Sans", sans-serif;
   height: 9rem;
-  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -225,6 +225,26 @@ header .btn-get-started {
 }
 
 /*End Hero */
+/*What About */
+.what-about {
+  background-color: #F4F5F7;
+}
+
+.what-about-item {
+  max-width: 50rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+.what-about-item h4 {
+  font-size: 2.2rem;
+}
+.what-about-item p {
+  margin-top: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+/*End What About */
 /*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

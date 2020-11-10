@@ -6,6 +6,7 @@ $green-haze:#009B4D;
 $governor-bay:#3040C4;
 $mandys-pink:#F3C6BD;
 $mandys-pink2:#efb9af;
+$athens-gray:#F4F5F7;
 @mixin bs-md{
   -webkit-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
   -moz-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
@@ -65,6 +66,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  background-color: transparent;
   .btn-get-started{
     margin-left: 1.5rem;
   }
@@ -72,7 +74,6 @@ header{
 .nav-header{
   font-family: 'Work Sans', sans-serif;
   height: 9rem;
-  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,5 +223,26 @@ z-index: 1;
   background-color: $mandys-pink2;
 }
 /*End Hero */
+
+
+/*What About */
+.what-about{
+  background-color: $athens-gray;
+
+}
+.what-about-item{
+  max-width: 50rem;
+  margin: auto;
+  padding: 0 1.5rem;
+  h4{
+    font-size: 2.2rem;
+  }
+  p{
+    margin-top: .5rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+}
+/*End What About */
 
 /*END HOME PAGE*/

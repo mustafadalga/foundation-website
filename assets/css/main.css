@@ -245,6 +245,13 @@ header .btn-get-started {
 }
 
 /*End What About */
+/*Organizations*/
+.organizations .section-content {
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*End Organizations*/
 /*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

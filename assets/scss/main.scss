@@ -228,7 +228,6 @@ z-index: 1;
 /*What About */
 .what-about{
   background-color: $athens-gray;
-
 }
 .what-about-item{
   max-width: 50rem;
@@ -244,5 +243,15 @@ z-index: 1;
   }
 }
 /*End What About */
+
+
+/*Organizations*/
+.organizations{
+  .section-content{
+      align-items: center;
+      justify-content: space-around;
+   }
+}
+/*End Organizations*/
 
 /*END HOME PAGE*/

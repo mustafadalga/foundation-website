@@ -28,6 +28,14 @@ a {
   color: inherit;
 }
 
+h1 {
+  line-height: 8rem;
+}
+
+h2 {
+  line-height: 5rem;
+}
+
 .container {
   width: 100%;
   max-width: 120rem;
@@ -252,6 +260,94 @@ header .btn-get-started {
 }
 
 /*End Organizations*/
+/*Features*/
+.features {
+  position: relative;
+}
+.features .section-content {
+  align-items: center;
+}
+
+.features-text {
+  flex-basis: 40%;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-text-img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16rem;
+  height: 16rem;
+  transform: translate(-30%, -50%);
+}
+
+.features-head {
+  font-size: 2.2rem;
+  color: #009B4D;
+}
+
+.features-title {
+  font-size: 5.6rem;
+  font-weight: bold;
+  margin: 2.5rem 0;
+}
+
+.features-desc {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.feature-list {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.5rem;
+}
+
+.feature-item {
+  border-bottom: 1px solid #F4F5F7;
+  padding-bottom: 2.5rem;
+  cursor: pointer;
+}
+.feature-item.active .feature-head h3 {
+  color: #3142C6;
+}
+.feature-item.active .feature-body {
+  height: initial;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 1.5rem;
+}
+
+.feature-head {
+  display: flex;
+  align-items: center;
+}
+.feature-head img {
+  max-width: 2.4rem;
+}
+.feature-head h3 {
+  font-size: 2.2rem;
+  margin-left: 1rem;
+}
+
+.feature-body {
+  font-size: 1.8rem;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, height 0.5s linear, opacity 0.5s linear;
+}
+
+.features-img {
+  flex-basis: 55%;
+  margin-left: 5%;
+}
+
+/*End Features*/
 /*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

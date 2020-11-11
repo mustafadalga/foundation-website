@@ -51,6 +51,7 @@ section {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 1.3rem 2rem;
+  border-radius: 2px;
   transition: 0.3s ease-in-out;
   text-align: center;
 }
@@ -663,6 +664,7 @@ header .btn-get-started {
   display: flex;
   align-items: center;
   padding: 2rem;
+  border-radius: 0.8rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -702,6 +704,59 @@ header .btn-get-started {
 }
 
 /*End Hire*/
+/*Free Trial*/
+.free-trial {
+  background-color: #F4F5F7;
+}
+.free-trial .section-content {
+  max-width: 100rem;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-gap: 2.5rem;
+}
+.free-trial .section-title {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.free-trial .section-desc {
+  font-size: 2.2rem;
+}
+
+.free-trial-text {
+  max-width: 50rem;
+}
+
+.free-trial-form {
+  margin: 2.5rem 0;
+  display: flex;
+  grid-gap: 2.5rem;
+}
+.free-trial-form input {
+  border: 1px solid #aaa6ae;
+  padding: 1rem;
+  outline: none;
+  font-size: 1.8rem;
+  border-radius: 2px;
+}
+.free-trial-form input:focus, .free-trial-form input:active {
+  border-color: #3040C4;
+}
+.free-trial-form button {
+  border: none;
+}
+
+.free-trial-desc {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #aaa6ae;
+}
+.free-trial-desc a {
+  color: #3040C4;
+  border-bottom: 1px solid #3040C4;
+}
+
+/*End Free Trial*/
 /*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

@@ -12,6 +12,12 @@ $old-lace:#FCF0E3;
 $flamingo:#F1592B;
 $lochmara:#0185D0;
 $pasific-blue:#00A1C6;
+$scarpa-flow:#555159;
+@mixin bs-sm{
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
+  -moz-box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
+  box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
+}
 @mixin bs-md{
   -webkit-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
   -moz-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
@@ -67,6 +73,9 @@ section{
     @include bs-md
   }
 }
+.flex-column{
+  flex-direction: column;
+}
 .section-content{
   display: flex;
 }
@@ -106,6 +115,13 @@ header{
 .nav-header-logo{
   display: flex;
   align-items: center;
+}
+.nav-header-img{
+  img{
+    width: 6rem;
+    height: 6rem;
+    max-width: initial;
+  }
 }
 .nav-logo-text{
   h4{
@@ -419,11 +435,6 @@ z-index: 1;
 
 
 /*Communicate*/
-.communicate{
-  .section-content{
-    flex-direction: column;
-  }
-}
 .communicate-body{
   display: flex;
   align-items: center;
@@ -496,7 +507,6 @@ z-index: 1;
 .visitors{
   background-color: rgba( 0, 161, 198,.07);
   .section-content{
-    flex-direction: column;
     text-align: center;
   }
 }
@@ -538,5 +548,72 @@ z-index: 1;
   margin-top: 1rem;
 }
 /*End Visitors*/
+
+
+/*Testimonials*/
+.testimonials{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  .section-content{
+    position: relative;
+  }
+}
+.testimonial-img{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  max-width: 27rem;
+  z-index: -1;
+}
+.testimonial-head-title{
+  color: $governor-bay-2;
+  text-align: center;
+}
+.testimonial-list{
+  display: flex;
+  max-width:75rem;
+  margin:2.5rem auto 0;
+  overflow: hidden;
+}
+.testimonial{
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding:0 5rem;
+  width: 100%;
+  transition: 1s all;
+}
+.testimonial-desc{
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.testimonial-author{
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 2.5rem 0 .5rem;
+}
+.author-title{
+  font-size: 1.6rem;
+  color: $spun-pearl;
+}
+.testimonial-dots{
+  margin:5rem auto;
+  display: flex;
+  grid-gap: 2.5rem;
+}
+.testimonial-dot{
+  width: .8rem;
+  height: .8rem;
+  background-color:rgba(43, 41, 45,.2);
+  border-radius: 50%;
+  cursor: pointer;
+  &.active{
+    background-color: $governor-bay;
+  }
+  &:hover{
+    @include bs-sm
+  }
+}
+/*End Testimonials*/
 
 /*END HOME PAGE*/

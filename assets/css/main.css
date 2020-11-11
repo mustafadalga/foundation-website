@@ -500,6 +500,59 @@ header .btn-get-started {
 }
 
 /* End Communicate*/
+/*Visitors*/
+.visitors {
+  background-color: rgba(0, 161, 198, 0.07);
+}
+.visitors .section-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+.visitors-header {
+  max-width: 45rem;
+  margin: auto;
+}
+
+.visitors-btn {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+.visitors-btn .btn-learn-more {
+  color: #2B292D;
+}
+
+.visitors-body {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.visitor-item {
+  background-color: #ffffff;
+  padding: 2rem;
+}
+.visitor-item.active {
+  background-color: #3040C4;
+}
+.visitor-item.active .visitor-img-title {
+  color: #ffffff;
+}
+
+.visitor-img {
+  width: auto;
+  max-height: 19.5rem;
+}
+
+.visitor-img-title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+/*End Visitors*/
 /*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

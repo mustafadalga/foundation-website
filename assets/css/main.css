@@ -59,6 +59,24 @@ section {
   box-shadow: 1px 1px 8px 0px #2b292d;
 }
 
+.section-content {
+  display: flex;
+}
+
+.section-head-title {
+  font-size: 2.2rem;
+}
+
+.section-title {
+  font-size: 5.6rem;
+  margin: 2.5rem 0;
+}
+
+.section-desc {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
 /*HOME PAGE*/
 /*Header */
 header {
@@ -198,10 +216,6 @@ header .btn-get-started {
   padding-top: 15rem;
 }
 
-.section-content {
-  display: flex;
-}
-
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -289,20 +303,8 @@ header .btn-get-started {
   transform: translate(-30%, -50%);
 }
 
-.features-head {
-  font-size: 2.2rem;
+.feature-head-title {
   color: #009B4D;
-}
-
-.features-title {
-  font-size: 5.6rem;
-  font-weight: bold;
-  margin: 2.5rem 0;
-}
-
-.features-desc {
-  font-size: 2.4rem;
-  font-weight: 400;
 }
 
 .feature-list {
@@ -385,28 +387,18 @@ header .btn-get-started {
   flex-basis: 50%;
 }
 .team-text > * {
-  max-width: 50rem;
+  max-width: 45rem;
 }
 
 .team-head-title {
-  font-size: 2.2rem;
-  font-weight: bold;
   color: #F1592B;
-}
-
-.team-title {
-  font-size: 5.6rem;
-  margin: 2.5rem 0;
-}
-
-.team-desc {
-  font-size: 2.4rem;
 }
 
 .team-card {
   margin-top: 5rem;
   background-color: #ffffff;
   padding: 2rem;
+  border-bottom: 4px solid #0185D0;
 }
 
 .team-card-head {
@@ -414,6 +406,7 @@ header .btn-get-started {
 }
 
 .team-card-body {
+  margin-top: 3rem;
   display: flex;
   align-items: center;
 }
@@ -423,7 +416,6 @@ header .btn-get-started {
 
 .team-card-text {
   margin-left: 1rem;
-  margin-top: 5rem;
 }
 .team-card-text h5 {
   font-size: 1.6rem;
@@ -435,6 +427,79 @@ header .btn-get-started {
 }
 
 /*End Team Inbox*/
+/*Communicate*/
+.communicate .section-content {
+  flex-direction: column;
+}
+
+.communicate-body {
+  display: flex;
+  align-items: center;
+}
+
+.communicate-head-title {
+  color: #0185D0;
+}
+
+.communicate-body-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  position: relative;
+}
+.communicate-body-item:first-child {
+  padding-bottom: 10rem;
+}
+.communicate-body-item:first-child:after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 15rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.communicate-body-item > * {
+  max-width: 40rem;
+}
+.communicate-body-item .btn-get-started {
+  max-width: 16rem;
+  margin-top: 2.5rem;
+}
+
+.communicate-img p {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.communicate-footer {
+  display: flex;
+  grid-gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.communicate-footer-item {
+  flex-basis: 33.3%;
+  padding-right: 5rem;
+}
+.communicate-footer-item p {
+  font-size: 1.8rem;
+}
+.communicate-footer-item p span {
+  font-weight: bold;
+}
+.communicate-footer-item a {
+  display: block;
+  margin-top: 1rem;
+  color: #3040C4;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* End Communicate*/
 /*END HOME PAGE*/
 
 /*# sourceMappingURL=main.css.map */

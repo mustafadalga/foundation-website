@@ -13,6 +13,7 @@ $flamingo:#F1592B;
 $lochmara:#0185D0;
 $pasific-blue:#00A1C6;
 $scarpa-flow:#555159;
+$cadet-blue:#9FA8BE;
 @mixin bs-sm{
   -webkit-box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
   -moz-box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
@@ -69,6 +70,7 @@ section{
   font-weight: bold;
   padding: 1.3rem 2rem;
   transition:.3s ease-in-out;
+  text-align: center;
   &:hover{
     @include bs-md
   }
@@ -553,13 +555,13 @@ z-index: 1;
 /*Testimonials*/
 .testimonials{
   border-bottom: 1px solid rgba(0,0,0,.1);
-  .section-content{
+  .container{
     position: relative;
   }
 }
 .testimonial-img{
   position: absolute;
-  bottom:0;
+  bottom:-5rem;
   right: 0;
   max-width: 27rem;
   z-index: -1;
@@ -615,5 +617,64 @@ z-index: 1;
   }
 }
 /*End Testimonials*/
+
+/*Hire*/
+.hire-head{
+  max-width: 55rem;
+  margin: auto;
+  text-align: center;
+}
+.btn-hire{
+  display: inline-block;
+  margin-top: 2.5rem;
+  background-color: $governor-bay;
+  color: $white;
+}
+.jobs-list{
+ width: 100%;
+ max-width: 75rem;
+ margin:8rem auto 2.5rem;
+ display: flex;
+ flex-direction: column;
+ grid-gap: 2.5rem;
+}
+.job-item{
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid rgba(0,0,0,.2);
+  transition:.3s ease-in-out;
+  cursor: pointer;
+  &.active{
+    background-color: $governor-bay;
+    border: none;
+    &>*{
+      color: $white;
+    }
+  }
+  &:hover{
+    @include bs-sm
+  }
+}
+.job-title{
+  flex: 6 0 auto;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.job-location{
+  flex: 3 0 auto;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #9fa8be;
+}
+.job-arrow{
+  flex: 1 0 auto;
+  color: #9fa8be;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+}
+/*End Hire*/
+
 
 /*END HOME PAGE*/

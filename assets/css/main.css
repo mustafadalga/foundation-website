@@ -724,7 +724,7 @@ header .btn-get-started {
 }
 
 .free-trial-text {
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 .free-trial-form {
@@ -738,6 +738,7 @@ header .btn-get-started {
   outline: none;
   font-size: 1.8rem;
   border-radius: 2px;
+  min-width: 35rem;
 }
 .free-trial-form input:focus, .free-trial-form input:active {
   border-color: #3040C4;
@@ -847,6 +848,7 @@ footer {
 /*End Footer*/
 /*END HOME PAGE*/
 /*PRICING PAGE*/
+/*Pricing*/
 .pricing {
   padding-top: 15rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, #f9fafb 100%);
@@ -999,6 +1001,34 @@ footer {
   text-shadow: -1px 4px 2px rgba(43, 41, 45, 0.6);
 }
 
+/*End Pricing*/
+/*FAQ*/
+.faq .section-title {
+  text-align: center;
+}
+
+.faq-questions {
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  grid-gap: 5rem;
+}
+
+.question-title {
+  font-size: 2.4rem;
+}
+
+.question-answer {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+}
+.question-answer a {
+  color: #3040C4;
+  border-bottom: 1px solid #3040C4;
+  font-weight: bold;
+}
+
+/*End FAQ*/
 /*END PRICING PAGE*/
 
 /*# sourceMappingURL=main.css.map */

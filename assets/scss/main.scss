@@ -705,7 +705,7 @@ z-index: 1;
   }
 }
 .free-trial-text{
-  max-width: 50rem;
+  max-width: 60rem;
 }
 .free-trial-form{
   margin: 2.5rem 0;
@@ -717,6 +717,7 @@ z-index: 1;
     outline: none;
     font-size: 1.8rem;
     border-radius: 2px;
+    min-width: 35rem;
     &:focus,&:active{
       border-color: $governor-bay;
     }
@@ -819,6 +820,8 @@ footer{
 
 
 /*PRICING PAGE*/
+
+/*Pricing*/
 .pricing{
   padding-top: 15rem;
   background: linear-gradient(
@@ -954,4 +957,33 @@ footer{
     @include bs-sm-text
   }
 }
+/*End Pricing*/
+
+
+/*FAQ*/
+  .faq{
+    .section-title{
+      text-align: center;
+    }
+  }
+  .faq-questions{
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(40rem,1fr));
+    grid-gap: 5rem;
+  }
+  .question-title{
+    font-size: 2.4rem;
+  }
+  .question-answer{
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    a{
+      color: $governor-bay;
+      border-bottom: 1px solid $governor-bay;
+      font-weight: bold;
+    }
+  }
+/*End FAQ*/
+
 /*END PRICING PAGE*/

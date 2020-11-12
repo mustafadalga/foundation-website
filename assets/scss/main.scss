@@ -58,8 +58,19 @@ a{
 h1{
   line-height: 8rem;
 }
-h2{
-  //line-height: 5rem;
+input,textarea{
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: 1px solid rgba(43,41,45,.2);
+  &::placeholder{
+    color: $cadet-blue;
+  }
+  &:focus,&:active{
+    outline-color: $governor-bay;
+  }
+}
+textarea{
+  resize: none;
 }
 .container{
   width: 100%;
@@ -191,9 +202,10 @@ header{
   grid-template-columns: repeat(auto-fill, minmax(calc(50% - 2.5rem), 1fr));
   grid-gap: 2.5rem;
   visibility: hidden;
-   opacity: 0;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
-z-index: 1;
+  z-index: 1;
+  @include bs-sm
 }
 .dropdown-arrow-up{
     position: absolute;
@@ -235,6 +247,7 @@ z-index: 1;
 .btn-get-started{
   background-color: $governor-bay;
   color: $white;
+  border: none;
 }
 /*End Header */
 
@@ -712,15 +725,8 @@ z-index: 1;
   display: flex;
   grid-gap: 2.5rem;
   input{
-    border: 1px solid  $spun-pearl;
-    padding: 1rem;
-    outline: none;
-    font-size: 1.8rem;
     border-radius: 2px;
     min-width: 35rem;
-    &:focus,&:active{
-      border-color: $governor-bay;
-    }
   }
   button{
     border: none;
@@ -824,10 +830,7 @@ footer{
 /*Pricing*/
 .pricing{
   padding-top: 15rem;
-  background: linear-gradient(
-                  to bottom,
-                  rgba(0,0,0,.08) 0%,
-                  rgba(249,250,251,1) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(249,250,251,1) 100%);
 }
 .pricing-header{
   text-align: center;
@@ -987,3 +990,35 @@ footer{
 /*End FAQ*/
 
 /*END PRICING PAGE*/
+
+
+/*Contact Page*/
+.contact{
+  padding-top: 15rem;
+  background: linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(249,250,251,1) 100%);
+  .section-title{
+    text-align: center;
+  }
+}
+.contact-form-wrap{
+  border-top: 1px solid rgba(43,41,45,.2);
+  margin: 5rem 0;
+  padding-top: 5rem ;
+}
+.contact-form{
+  max-width: 55rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.5rem;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  grid-gap: .5rem;
+  label{
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+/*End Contact Page*/

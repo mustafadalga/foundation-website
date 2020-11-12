@@ -32,6 +32,22 @@ h1 {
   line-height: 8rem;
 }
 
+input, textarea {
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+}
+input::placeholder, textarea::placeholder {
+  color: #9FA8BE;
+}
+input:focus, input:active, textarea:focus, textarea:active {
+  outline-color: #3040C4;
+}
+
+textarea {
+  resize: none;
+}
+
 .container {
   width: 100%;
   max-width: 120rem;
@@ -174,6 +190,9 @@ header .btn-get-started {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 1;
+  -webkit-box-shadow: 1px 1px 4px 0px #2b292d;
+  -moz-box-shadow: 1px 1px 4px 0px #2b292d;
+  box-shadow: 1px 1px 4px 0px #2b292d;
 }
 
 .dropdown-arrow-up {
@@ -218,6 +237,7 @@ header .btn-get-started {
 .btn-get-started {
   background-color: #3040C4;
   color: #ffffff;
+  border: none;
 }
 
 /*End Header */
@@ -733,15 +753,8 @@ header .btn-get-started {
   grid-gap: 2.5rem;
 }
 .free-trial-form input {
-  border: 1px solid #aaa6ae;
-  padding: 1rem;
-  outline: none;
-  font-size: 1.8rem;
   border-radius: 2px;
   min-width: 35rem;
-}
-.free-trial-form input:focus, .free-trial-form input:active {
-  border-color: #3040C4;
 }
 .free-trial-form button {
   border: none;
@@ -1030,5 +1043,39 @@ footer {
 
 /*End FAQ*/
 /*END PRICING PAGE*/
+/*Contact Page*/
+.contact {
+  padding-top: 15rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, #f9fafb 100%);
+}
+.contact .section-title {
+  text-align: center;
+}
+
+.contact-form-wrap {
+  border-top: 1px solid rgba(43, 41, 45, 0.2);
+  margin: 5rem 0;
+  padding-top: 5rem;
+}
+
+.contact-form {
+  max-width: 55rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 0.5rem;
+}
+.form-group label {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/*End Contact Page*/
 
 /*# sourceMappingURL=main.css.map */

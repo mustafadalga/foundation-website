@@ -120,6 +120,9 @@ section{
 .bg-white{
   background-color: $white;
 }
+.pt-15{
+  padding-top: 15rem;
+}
 
 /*HOME PAGE*/
 
@@ -264,7 +267,6 @@ header{
 .hero{
   background-color: $mandys-pink;
   min-height: 100vh;
-  padding-top: 15rem;
 }
 .hero-text{
   display: flex;
@@ -837,7 +839,6 @@ footer{
 
 /*Pricing*/
 .pricing{
-  padding-top: 15rem;
   @include bg-linear-gradient;
 }
 .pricing-header{
@@ -1002,7 +1003,6 @@ footer{
 
 /*Contact Page*/
 .contact{
-  padding-top: 15rem;
   @include bg-linear-gradient;
   .section-title{
     text-align: center;
@@ -1035,7 +1035,6 @@ footer{
 
 /* Terms Of Service*/
 .legal{
-  padding-top: 15rem;
   @include bg-linear-gradient;
   .section-title{
     text-align: center;

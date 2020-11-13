@@ -35,7 +35,9 @@ $sunglow:#FFC52C;
   -moz-box-shadow: .5px -1px 4px 0px rgba(43,41,45,1);
   box-shadow: .5px -1px 4px 0px rgba(43,41,45,1);
 }
-
+@mixin bg-linear-gradient{
+  background: linear-gradient(to bottom,rgba(0,0,0,.05) 0%,rgba(249,250,251,1) 100%);
+}
 
 
 *,*:before,*:after{
@@ -836,7 +838,7 @@ footer{
 /*Pricing*/
 .pricing{
   padding-top: 15rem;
-  background: linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(249,250,251,1) 100%);
+  @include bg-linear-gradient;
 }
 .pricing-header{
   text-align: center;
@@ -1001,7 +1003,7 @@ footer{
 /*Contact Page*/
 .contact{
   padding-top: 15rem;
-  background: linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(249,250,251,1) 100%);
+  @include bg-linear-gradient;
   .section-title{
     text-align: center;
   }
@@ -1034,7 +1036,7 @@ footer{
 /* Terms Of Service*/
 .legal{
   padding-top: 15rem;
-  background: linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(249,250,251,1) 100%);
+  @include bg-linear-gradient;
   .section-title{
     text-align: center;
   }

@@ -15,6 +15,7 @@ $pasific-blue:#00A1C6;
 $scarpa-flow:#555159;
 $cadet-blue:#9FA8BE;
 $alizarin-crimson:#E22729;
+$sunglow:#FFC52C;
 
 @mixin bs-sm{
   -webkit-box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
@@ -28,6 +29,11 @@ $alizarin-crimson:#E22729;
 }
 @mixin bs-sm-text{
   text-shadow: -1px 4px 2px rgba(43,41,45,0.6);
+}
+@mixin bs-tab-menu{
+  -webkit-box-shadow: .5px -1px 4px 0px rgba(43,41,45,1);
+  -moz-box-shadow: .5px -1px 4px 0px rgba(43,41,45,1);
+  box-shadow: .5px -1px 4px 0px rgba(43,41,45,1);
 }
 
 
@@ -1022,3 +1028,93 @@ footer{
   }
 }
 /*End Contact Page*/
+
+
+
+/* Terms Of Service*/
+.legal{
+  padding-top: 15rem;
+  background: linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(249,250,251,1) 100%);
+  .section-title{
+    text-align: center;
+  }
+}
+.legal-wrap{
+  margin-top: 5rem;
+  hr{
+     background-color: rgba(43,41,45,.2);
+  }
+}
+.legal-tabs{
+  display: flex;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.tabs-item{
+  font-size: 1.8rem;
+  color: $spun-pearl;
+  font-weight: 400;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+
+  &.active{
+    font-weight: bold;
+    color: $black;
+    @include bs-tab-menu
+  }
+  &:hover{
+    @include bs-tab-menu
+  }
+}
+.tabs-content{
+  max-width: 75rem;
+  margin: 10rem auto 5rem;
+}
+
+.tab-pane{
+  display: none;
+  -webkit-animation: fadeEffect .5s;
+  animation: fadeEffect .5s;
+  &.active{
+    display: block;
+  }
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.tab-title{
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.tab-description{
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 1.5rem 0 3rem;
+  line-height: 1.5;
+}
+.tab-list{
+  font-size: 2.4rem;
+  position: relative;
+  margin-left: 4.5rem;
+  li{
+    margin: 1.5rem 0;
+  }
+  &:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left:-4.5rem;
+    width:6px;
+    height: 100%;
+    background-color: $sunglow;
+  }
+}
+/* Terms Of Service*/
+

@@ -1077,5 +1077,110 @@ footer {
 }
 
 /*End Contact Page*/
+/* Terms Of Service*/
+.legal {
+  padding-top: 15rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, #f9fafb 100%);
+}
+.legal .section-title {
+  text-align: center;
+}
+
+.legal-wrap {
+  margin-top: 5rem;
+}
+.legal-wrap hr {
+  background-color: rgba(43, 41, 45, 0.2);
+}
+
+.legal-tabs {
+  display: flex;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.tabs-item {
+  font-size: 1.8rem;
+  color: #aaa6ae;
+  font-weight: 400;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.tabs-item.active {
+  font-weight: bold;
+  color: #2B292D;
+  -webkit-box-shadow: 0.5px -1px 4px 0px #2b292d;
+  -moz-box-shadow: 0.5px -1px 4px 0px #2b292d;
+  box-shadow: 0.5px -1px 4px 0px #2b292d;
+}
+.tabs-item:hover {
+  -webkit-box-shadow: 0.5px -1px 4px 0px #2b292d;
+  -moz-box-shadow: 0.5px -1px 4px 0px #2b292d;
+  box-shadow: 0.5px -1px 4px 0px #2b292d;
+}
+
+.tabs-content {
+  max-width: 75rem;
+  margin: 10rem auto 5rem;
+}
+
+.tab-pane {
+  display: none;
+  -webkit-animation: fadeEffect 0.5s;
+  animation: fadeEffect 0.5s;
+}
+.tab-pane.active {
+  display: block;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tab-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.tab-description {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 1.5rem 0 3rem;
+  line-height: 1.5;
+}
+
+.tab-list {
+  font-size: 2.4rem;
+  position: relative;
+  margin-left: 4.5rem;
+}
+.tab-list li {
+  margin: 1.5rem 0;
+}
+.tab-list:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -4.5rem;
+  width: 6px;
+  height: 100%;
+  background-color: #FFC52C;
+}
+
+/* Terms Of Service*/
 
 /*# sourceMappingURL=main.css.map */

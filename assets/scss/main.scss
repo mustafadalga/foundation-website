@@ -1304,6 +1304,15 @@ footer{
   }
   /*End Hero*/
 
+  /*What About */
+  .what-about{
+    .section-content{
+      flex-direction: column;
+      grid-gap: 5rem;
+    }
+  }
+  /*End What About */
+
 
   /*End Home Page*/
 }

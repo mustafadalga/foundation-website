@@ -1466,6 +1466,12 @@ footer {
   }
 
   /*End Communicate*/
+  /*Visitors*/
+  .visitors-body {
+    margin-top: 4rem;
+  }
+
+  /*End Visitors*/
   /*End Home Page*/
 }
 @media screen and (max-width: 450px) {
@@ -1481,6 +1487,12 @@ footer {
   }
 
   /*End Organizations*/
+  /*Visitors*/
+  .visitors-btn {
+    flex-direction: column;
+  }
+
+  /*End Visitors*/
   /*End Home Page*/
 }
 /* End Media Queries */

@@ -292,6 +292,7 @@ header .btn-get-started {
 
 .hero-title {
   width: 150%;
+  font-weight: bold;
   font-size: 8rem;
 }
 
@@ -1225,6 +1226,7 @@ footer {
 }
 @media screen and (max-width: 750px) {
   /* Home Page*/
+  /* Header */
   .hamburger-wrap {
     display: flex;
   }
@@ -1338,6 +1340,43 @@ footer {
     padding: 1rem 2rem;
   }
 
+  /* Header */
+  /*Hero*/
+  .hero .section-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    flex-basis: initial;
+  }
+
+  .hero-title {
+    text-align: center;
+    font-size: 5rem;
+    width: initial;
+  }
+
+  .hero-img {
+    margin-top: 2.5rem;
+    margin-left: -1.5rem;
+    width: calc(100% + 3rem);
+  }
+
+  .hero-btn {
+    justify-content: center;
+  }
+
+  /*End Hero*/
+  /*End Home Page*/
+}
+@media screen and (max-width: 450px) {
+  /*Home Page*/
+  .hero-btn {
+    flex-direction: column;
+  }
+
+  /*Hero*/
+  /*End Hero*/
   /*End Home Page*/
 }
 /* End Media Queries */

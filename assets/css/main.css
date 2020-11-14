@@ -1494,6 +1494,42 @@ footer {
   /*End Testimonials*/
   /*End Home Page*/
 }
+@media screen and (max-width: 500px) {
+  /* Home Page*/
+  /*Hire*/
+  .job-item {
+    flex-direction: column;
+    grid-gap: 1.5rem;
+    position: relative;
+    align-items: initial;
+  }
+  .job-item.active {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .job-item.active > * {
+    color: initial;
+  }
+  .job-item.active .job-location, .job-item.active .job-arrow {
+    color: #9FA8BE;
+  }
+
+  .job-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #D5D4D5;
+    color: #9FA8BE;
+    font-weight: bold;
+  }
+
+  /*End Hire*/
+  /*End Home Page*/
+}
 @media screen and (max-width: 450px) {
   /*Home Page*/
   .hero-btn {
@@ -1513,6 +1549,12 @@ footer {
   }
 
   /*End Visitors*/
+  /*Hire*/
+  .btn-hire {
+    display: block;
+  }
+
+  /*End Hire*/
   /*End Home Page*/
 }
 /* End Media Queries */

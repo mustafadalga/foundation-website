@@ -17,6 +17,7 @@ $cadet-blue:#9FA8BE;
 $alizarin-crimson:#E22729;
 $sunglow:#FFC52C;
 $mencury:#E3E3E3;
+$pale-slate:#D5D4D5;
 
 @mixin bs-sm{
   -webkit-box-shadow: 1px 1px 4px 1px rgba(43,41,45,1);
@@ -1431,6 +1432,43 @@ footer{
 
   /*End Home Page*/
 }
+@media screen and (max-width: 500px){
+  /* Home Page*/
+
+  /*Hire*/
+  .job-item{
+    flex-direction: column;
+    grid-gap: 1.5rem;
+    position: relative;
+    align-items: initial;
+    &.active {
+      background-color: transparent;
+      border: 1px solid rgba(0,0,0,.2);
+      & > * {
+        color: initial;
+      }
+      .job-location,.job-arrow{
+        color:$cadet-blue;
+      }
+    }
+  }
+  .job-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: $pale-slate;
+    color: $cadet-blue;
+    font-weight: bold;
+  }
+
+  /*End Hire*/
+
+  /*End Home Page*/
+}
 @media screen and (max-width: 450px){
   /*Home Page*/
     .hero-btn{
@@ -1453,6 +1491,14 @@ footer{
     flex-direction: column;
   }
   /*End Visitors*/
+
+
+
+  /*Hire*/
+  .btn-hire{
+    display: block;
+  }
+  /*End Hire*/
 
 
 

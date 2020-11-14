@@ -1225,6 +1225,12 @@ footer {
   /*End Home Page*/
 }
 @media screen and (max-width: 750px) {
+  /*Global */
+  .section-title {
+    font-size: 4rem;
+  }
+
+  /*End Global*/
   /* Home Page*/
   /* Header */
   .hamburger-wrap {
@@ -1400,6 +1406,29 @@ footer {
   }
 
   /*End Organizations*/
+  /*Team Inbox*/
+  .team-inbox .section-content {
+    flex-direction: column;
+    grid-gap: 5rem;
+  }
+
+  .team-img {
+    padding: 0;
+  }
+  .team-img p {
+    display: none;
+  }
+
+  .team-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+  .team-text > * {
+    max-width: initial;
+  }
+
+  /*End Team Inbox*/
   /*End Home Page*/
 }
 @media screen and (max-width: 450px) {

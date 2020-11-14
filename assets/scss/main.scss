@@ -1163,6 +1163,14 @@ footer{
 }
 
 @media screen and (max-width: 750px) {
+    /*Global */
+  .section-title{
+    font-size: 4rem;
+  }
+
+  /*End Global*/
+
+
   /* Home Page*/
 
 
@@ -1338,6 +1346,31 @@ footer{
     }
   }
   /*End Organizations*/
+
+
+
+  /*Team Inbox*/
+  .team-inbox{
+    .section-content{
+      flex-direction: column;
+      grid-gap:5rem ;
+    }
+  }
+  .team-img{
+    padding: 0;
+    p{
+      display: none;
+    }
+  }
+  .team-text{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    & > *{
+      max-width: initial;
+    }
+  }
+  /*End Team Inbox*/
 
 
   /*End Home Page*/

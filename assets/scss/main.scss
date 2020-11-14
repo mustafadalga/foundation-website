@@ -39,6 +39,18 @@ $mencury:#E3E3E3;
 @mixin bg-linear-gradient{
   background: linear-gradient(to bottom,rgba(0,0,0,.05) 0%,rgba(249,250,251,1) 100%);
 }
+@mixin communicate-bottom-line{
+  padding-bottom: 10rem;
+  &:after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 15rem;
+    height: 1px;
+    background-color:rgba(0,0,0,.1);
+  }
+}
 
 
 *,*:before,*:after{
@@ -512,17 +524,7 @@ header{
   position: relative;
 
   &:first-child{
-    padding-bottom: 10rem;
-
-    &:after{
-      position: absolute;
-      content: '';
-      top: 100%;
-      left: 0;
-      width: 15rem;
-      height: 1px;
-      background-color:rgba(0,0,0,.1);
-    }
+    @include communicate-bottom-line;
   }
   & > *{
     max-width: 40rem;
@@ -542,7 +544,7 @@ header{
 }
 .communicate-footer{
   display: flex;
-  grid-gap: 2.5rem;
+  grid-gap:5rem 2.5rem;
   margin-top: 5rem;
 }
 .communicate-footer-item{
@@ -1372,6 +1374,35 @@ footer{
   }
   /*End Team Inbox*/
 
+  /*Communicate*/
+  .communicate-body{
+    flex-direction: column;
+  }
+  .communicate-body-item{
+    & > *{
+      max-width: initial;
+    }
+    &:first-child{
+      &:after {
+      display: none;
+      }
+    }
+    &:last-child{
+      @include communicate-bottom-line;
+    }
+  }
+  .communicate-img{
+    width: 100%;
+    img{
+      max-width: 35rem;
+      margin: 0 auto;
+    }
+  }
+  .communicate-footer{
+    flex-direction: column;
+  }
+  /*End Communicate*/
+
 
   /*End Home Page*/
 }
@@ -1390,6 +1421,9 @@ footer{
     }
   }
   /*End Organizations*/
+
+
+
 
 
 

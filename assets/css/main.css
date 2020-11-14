@@ -540,7 +540,7 @@ header .btn-get-started {
 
 .communicate-footer {
   display: flex;
-  grid-gap: 2.5rem;
+  grid-gap: 5rem 2.5rem;
   margin-top: 5rem;
 }
 
@@ -1429,6 +1429,43 @@ footer {
   }
 
   /*End Team Inbox*/
+  /*Communicate*/
+  .communicate-body {
+    flex-direction: column;
+  }
+
+  .communicate-body-item > * {
+    max-width: initial;
+  }
+  .communicate-body-item:first-child:after {
+    display: none;
+  }
+  .communicate-body-item:last-child {
+    padding-bottom: 10rem;
+  }
+  .communicate-body-item:last-child:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 15rem;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .communicate-img {
+    width: 100%;
+  }
+  .communicate-img img {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  .communicate-footer {
+    flex-direction: column;
+  }
+
+  /*End Communicate*/
   /*End Home Page*/
 }
 @media screen and (max-width: 450px) {

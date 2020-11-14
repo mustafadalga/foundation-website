@@ -1170,12 +1170,10 @@ footer{
   .section-title{
     font-size: 4rem;
   }
-
   /*End Global*/
 
 
   /* Home Page*/
-
 
   /* Header */
   .hamburger-wrap{
@@ -1429,6 +1427,32 @@ footer{
   /*End Testimonials*/
 
 
+  /*Free Trial*/
+    .free-trial{
+      .section-content{
+        flex-direction: column;
+        align-items: initial;
+      }
+      .section-title{
+        text-align: center;
+      }
+    }
+  .free-trial-img{
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  .free-trial-text{
+    max-width: initial;
+  }
+  .free-trial-form{
+    flex-direction: column;
+    input{
+      min-width: initial;
+    }
+  }
+  /*End Free Trial*/
+
+
 
   /*End Home Page*/
 }
@@ -1477,7 +1501,6 @@ footer{
 
   /*Organizations*/
   .organization{
-   // flex-basis:100%;
     img{
       width: initial;
       max-width: 7.5rem;
@@ -1491,7 +1514,6 @@ footer{
     flex-direction: column;
   }
   /*End Visitors*/
-
 
 
   /*Hire*/

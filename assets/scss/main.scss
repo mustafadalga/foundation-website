@@ -1394,7 +1394,7 @@ footer{
   .communicate-img{
     width: 100%;
     img{
-      max-width: 35rem;
+      max-width: 30rem;
       margin: 0 auto;
     }
   }
@@ -1409,6 +1409,23 @@ footer{
   }
   /*End Visitors*/
 
+  /*Testimonials*/
+  .testimonial-list{
+    max-width: 100%;
+  }
+  .testimonial{
+    padding: 0;
+  }
+  .testimonial-img{
+    position: initial;
+    max-width: 30rem;
+    margin:0 auto;
+  }
+  .testimonial-dots{
+    margin: 2.5rem auto 5rem;
+  }
+
+  /*End Testimonials*/
 
 
 

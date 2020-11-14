@@ -18,9 +18,9 @@ $alizarin-crimson:#E22729;
 $sunglow:#FFC52C;
 
 @mixin bs-sm{
-  -webkit-box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
-  -moz-box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
-  box-shadow: 1px 1px 4px 0px rgba(43,41,45,1);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(43,41,45,1);
+  -moz-box-shadow: 1px 1px 4px 1px rgba(43,41,45,1);
+  box-shadow: 1px 1px 4px 1px rgba(43,41,45,1);
 }
 @mixin bs-md{
   -webkit-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
@@ -147,6 +147,7 @@ header{
 .nav-header-logo,.footer-logo{
   display: flex;
   align-items: center;
+  grid-gap: 1rem;
 }
 .nav-header-img{
   img{
@@ -187,13 +188,16 @@ header{
       opacity: 1;
     }
   }
-
 }
 .nav-header-link{
   font-size: 1.8rem;
   font-weight: 400;
   display: flex;
   align-items: center;
+  transition: .2s ease-in-out;
+  &:hover{
+    color: $governor-bay;
+  }
   img{
     margin-left: 1rem;
     font-family: initial;
@@ -259,6 +263,30 @@ header{
   background-color: $governor-bay;
   color: $white;
   border: none;
+}
+.hamburger-wrap{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 6.4rem;
+  height:6.4rem;
+  border-left: 1px solid rgba(0,0,0,.15);
+}
+.hamburger-icon{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.line{
+  background-color: $cadet-blue;
+  height: 3px;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*End Header */
 
@@ -697,11 +725,11 @@ header{
   flex: 3 0 auto;
   font-size: 1.8rem;
   font-weight: 400;
-  color: #9fa8be;
+  color: $cadet-blue;
 }
 .job-arrow{
   flex: 1 0 auto;
-  color: #9fa8be;
+  color: $cadet-blue;
   font-size: 2rem;
   font-weight: bold;
   text-align: right;
@@ -1119,3 +1147,133 @@ footer{
 }
 /* Terms Of Service*/
 
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+  /*Home */
+  .nav-logo-text{
+    span{
+      display: none;
+    }
+  }
+  /*End Home Page*/
+}
+
+@media screen and (max-width: 750px) {
+  /* Home Page*/
+  .hamburger-wrap{
+    display: flex;
+  }
+  header{
+    background-color: $white;
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn-get-started{
+      margin:1.5rem 0 0 0;
+    }
+    &.open{
+      .nav-header-menu{
+        transform: translateX(0);
+      }
+      .hamburger-icon{
+        .line:nth-of-type(1) {
+          -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg) translate(0.6rem, 0.1rem);
+        }
+        .line:nth-of-type(2) {
+          display: none;
+        }
+        .line:nth-of-type(3) {
+          -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg) translate(0.6rem, -0.1rem);
+        }
+      }
+    }
+  }
+  .nav-header{
+    height: 6.4rem;
+  }
+  .nav-header-img{
+    img{
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+  .nav-header-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 6.4rem;
+    height: 100vh;
+    background-color: $white;
+    flex-direction: column;
+    z-index: 1;
+    padding:0 2.5rem;
+    transform: translateX(-20rem);
+    transition: transform 0.5s ease-in-out;
+    }
+  .nav-header-items{
+    flex-direction: column;
+  }
+  .nav-header-item{
+    padding:1.5rem 7.5rem 1.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    &.active{
+      .dropdown-library{
+        display: grid;
+      }
+      img{
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .nav-header-link{
+    font-size: 1.6rem;
+    img{
+      -webkit-transition: -webkit-transform .3s ease-in-out;
+      transition:         transform .3s ease-in-out;
+      transform: rotate(-90deg);
+    }
+  }
+  .dropdown-library{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    width: initial;
+    opacity: initial;
+    visibility: initial;
+    background-color: transparent;
+    box-shadow: initial;
+    position: initial;
+    padding: initial;
+    grid-template-columns:1fr;
+    grid-gap: 1.5rem;
+    display: none;
+  }
+  .dropdown-arrow-up{
+    display: none;
+  }
+  .library-item{
+    .library-title{
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+    &:hover{
+      .library-title{
+        color: $governor-bay;
+      }
+    }
+  }
+  .library-description{
+    display: none;
+  }
+  .btn{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+  /*End Home Page*/
+}
+/* End Media Queries */

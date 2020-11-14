@@ -163,14 +163,14 @@ header{
   align-items: center;
   grid-gap: 1rem;
 }
-.nav-header-img{
+.nav-header-img,.footer-img{
   img{
     width: 6rem;
     height: 6rem;
     max-width: initial;
   }
 }
-.nav-logo-text{
+.nav-logo-text,.footer-logo-text{
   h4{
     font-size: 2rem;
   }
@@ -796,13 +796,13 @@ footer{
 }
 .footer-top{
   display: flex;
-  flex-wrap: wrap;
-  grid-row-gap: 2rem;
+  grid-gap: 2.5rem;
 }
 .footer-info{
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   grid-gap: 2.5rem;
 }
 .footer-desc{
@@ -812,6 +812,7 @@ footer{
 }
 .mobile-app{
   display: flex;
+  flex-wrap: wrap;
   grid-gap: 2.5rem;
   img{
     max-width: 12rem;
@@ -1454,6 +1455,9 @@ footer{
 
 
 
+
+
+
   /*End Home Page*/
 }
 @media screen and (max-width: 500px){
@@ -1491,6 +1495,39 @@ footer{
 
   /*End Hire*/
 
+
+  /*Footer*/
+  .footer-top{
+    flex-wrap: wrap;
+  }
+  .footer-info{
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: -1.5rem;
+    width: calc(100% + 3rem);
+    padding-bottom: 5rem;
+    border-bottom: 1px solid $mencury;
+  }
+  .footer-desc{
+    display: none;
+  }
+  .mobile-app{
+    flex-wrap: nowrap;
+  }
+  .footer-menu{
+    flex-direction: column;
+  }
+  .footer-bottom{
+    border: none;
+    margin:0;
+    .container{
+      flex-direction: column;
+      grid-gap: 2.5rem ;
+    }
+  }
+  /*End Footer*/
+
+
   /*End Home Page*/
 }
 @media screen and (max-width: 450px){
@@ -1521,6 +1558,9 @@ footer{
     display: block;
   }
   /*End Hire*/
+
+
+
 
 
 

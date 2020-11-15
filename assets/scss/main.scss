@@ -1516,12 +1516,41 @@ footer{
   }
   /*End Free Trial*/
 
-
-
-
-
-
   /*End Home Page*/
+
+
+
+  /*Legal Page*/
+  .tab-title{
+    font-size: 2.2rem;
+  }
+  .tab-description,.tab-list{
+    font-size: 1.8rem;
+  }
+  /*End Legal Page*/
+
+
+
+  /*Pricing Page*/
+  .pricing-footer{
+    flex-direction: column;
+  }
+  .price-help{
+    &:first-child{
+      border-right: initial;
+      border-bottom: 1px solid rgba(43,41,45,.2);
+    }
+  }
+  .question-title{
+    font-size: 2rem;
+  }
+  .question-answer{
+    font-size: 1.8rem;
+  }
+  .faq-questions{
+    grid-template-columns:1fr;
+  }
+  /*End Pricing Page*/
 }
 @media screen and (max-width: 500px){
   /* Home Page*/

@@ -426,14 +426,16 @@ header{
 .feature-head{
   display: flex;
   align-items: center;
-
-  img{
-    max-width: 2.4rem;
-  }
   h3{
     font-size: 2.2rem;
     margin-left: 1rem;
   }
+}
+.feature-bg-img{
+  max-width: 2.4rem;
+}
+.feature-sm-img{
+  display: none;
 }
 .feature-body{
   font-size: 1.8rem;
@@ -1350,6 +1352,67 @@ footer{
   /*End Organizations*/
 
 
+  /*Features*/
+  .features-text-img,.features-img,.feature-bg-img{
+    display: none;
+  }
+  .features-text{
+    padding: 0;
+  }
+
+  .feature-sm-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 2.5rem;
+    margin: 2.5rem auto 0;
+    img{
+      max-width: 25rem;
+    }
+    p{
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $spun-pearl;
+    }
+  }
+  .features{
+    padding: 0;
+    .section-content{
+      flex-direction: column;
+    }
+  }
+  .feature-head{
+    h3{
+      margin: 0;
+    }
+  }
+  .feature-item{
+    margin-left: -1.5rem;
+    width: calc(100% + 3rem);
+    padding: 0 1.5rem 2.5rem 1.5rem;
+    &.active{
+      border-color: $athens-gray;
+      border-width: 1px;
+      .feature-head{
+        h3{
+          margin: 0;
+          color:$black ;
+        }
+      }
+    }
+    &:last-child{
+      border: none;
+    }
+  }
+  .feature-body{
+    height: initial;
+    opacity: 1;
+    visibility: visible;
+    margin-top:1.5rem;
+  }
+  /*End Features*/
+
+
 
   /*Team Inbox*/
   .team-inbox{
@@ -1558,7 +1621,6 @@ footer{
     display: block;
   }
   /*End Hire*/
-
 
 
 

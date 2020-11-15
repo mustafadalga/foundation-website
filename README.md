@@ -1,4 +1,4 @@
-# Foundation Web Site UI Design
+# Responsive Foundation Web Site UI Design
 
 ### Demo
 * [Netlity](https://foundation-web-design.netlify.app/) 

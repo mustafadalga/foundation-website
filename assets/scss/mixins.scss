@@ -1,0 +1,33 @@
+@mixin bs-sm{
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(43,41,45,1);
+  -moz-box-shadow: 1px 1px 4px 1px rgba(43,41,45,1);
+  box-shadow: 1px 1px 4px 1px rgba(43,41,45,1);
+}
+@mixin bs-md{
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
+  box-shadow: 1px 1px 8px 0px rgba(43,41,45,1);
+}
+@mixin bs-sm-text{
+  text-shadow: -1px 4px 2px rgba(43,41,45,0.6);
+}
+@mixin bs-tab-menu{
+  -webkit-box-shadow: .5px -1px 4px 0px rgba(43,41,45,1);
+  -moz-box-shadow: .5px -1px 4px 0px rgba(43,41,45,1);
+  box-shadow: .5px -1px 4px 0px rgba(43,41,45,1);
+}
+@mixin bg-linear-gradient{
+  background: linear-gradient(to bottom,rgba(0,0,0,.05) 0%,rgba(249,250,251,1) 100%);
+}
+@mixin communicate-bottom-line{
+  padding-bottom: 10rem;
+  &:after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 15rem;
+    height: 1px;
+    background-color:rgba(0,0,0,.1);
+  }
+}
